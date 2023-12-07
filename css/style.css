@@ -318,7 +318,8 @@ main {
 
 .accommodation-cards {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: no-wrap;
+  align-self: stretch;
   gap: 30px;
 }
 
