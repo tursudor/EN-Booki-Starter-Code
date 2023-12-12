@@ -333,7 +333,7 @@ main {
 
 .accommodation-cards img {
   width: 100%;
-  height: 120px;
+  height: 117px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
@@ -376,6 +376,7 @@ main {
 /****** Popular ***********/
 .popular {
   width: 32%;
+  align-self: stretch;
 }
 
 .popular-cards .card {
@@ -448,6 +449,7 @@ main {
   height: 380px;
   border-radius: 20px 20px 0px 0px;
   width: 100%;
+  object-fit:cover;
 }
 
 .things-to-do-figure figcaption {
