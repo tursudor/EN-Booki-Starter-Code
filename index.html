@@ -2,334 +2,329 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Booki</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer">
-    <link rel="stylesheet" href="./css/style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Booki</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+		integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+		crossorigin="anonymous" referrerpolicy="no-referrer">
+	<link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-    <div class="main-container">
-        <header>
-            <div class="logo">
-                <img src="./images/logo/Booki.png" class="Booki" alt="Booki Logo">
-            </div>
-            <nav class="navigation">
-                <div class="nav-buttons">
-                    <a href="#accommodation-id" class="navigation-btn">
-                        <div class="blue-bar"></div>
-                        <div class="bg-bar"></div>
-                        <p class="nav-btn-text">Accomodation</p>
-                    </a>
-                    <a href="#things-to-do-id" class="navigation-btn">
-                        <div class="blue-bar"></div>
-                        <div class="bg-bar"></div>
-                        <p class="nav-btn-text">Things to do</p>
-                    </a>
-                </div>
-            </nav>
-        </header>
-        <main>
-            <!-- Search and filters section -->
-            <section class="info-group-section">
-                <div class="find-accomodation-headline">
-                    <h1 class="headline-title">Find accomodation for your dream holiday</h1>
-                    <p class="headline-subtitle">In the heart of the city or surrounded by nature</p>
-                </div>
-                <form class="search-bar-mobile">
-                    <svg class="search-bar-location-icon" xmlns="http://www.w3.org/2000/svg" width="52" height="51"
-                        viewBox="0 0 52 51" fill="none">
-                        <path
-                            d="M51.5 1V0.5H51H16C7.43959 0.5 0.5 7.43959 0.5 16V35C0.5 43.5604 7.43959 50.5 16 50.5H51H51.5V50V1Z"
-                            fill="#F2F2F2" stroke="#F2F2F2" />
-                        <path
-                            d="M25.1359 33.5955C23.2328 31.3326 19 25.8481 19 22.7675C19 19.0299 22.134 16 26 16C29.8646 16 33 19.0299 33 22.7675C33 25.8481 28.7344 31.3326 26.8641 33.5955C26.4156 34.1348 25.5844 34.1348 25.1359 33.5955ZM26 25.0234C27.287 25.0234 28.3333 24.0117 28.3333 22.7675C28.3333 21.5233 27.287 20.5117 26 20.5117C24.713 20.5117 23.6667 21.5233 23.6667 22.7675C23.6667 24.0117 24.713 25.0234 26 25.0234Z"
-                            fill="black" />
-                    </svg>
-                    <input class="search-bar-input" type="text" value="Paris, France">
-                    <div class="search-magnyfying-glass">
-                        <svg class="search-bar-svg" xmlns="http://www.w3.org/2000/svg" width="17" height="17"
-                            viewBox="0 0 17 17" fill="none">
-                            <path
-                                d="M16.7688 14.6976L13.4582 11.3876C13.3088 11.2382 13.1062 11.1552 12.8937 11.1552H12.3525C13.2689 9.9832 13.8135 8.50913 13.8135 6.90558C13.8135 3.09091 10.7221 0 6.90676 0C3.09144 0 0 3.09091 0 6.90558C0 10.7202 3.09144 13.8112 6.90676 13.8112C8.51058 13.8112 9.98491 13.2667 11.1571 12.3504V12.8915C11.1571 13.104 11.2401 13.3065 11.3895 13.4559L14.7001 16.7659C15.0122 17.078 15.517 17.078 15.8258 16.7659L16.7655 15.8264C17.0776 15.5143 17.0776 15.0097 16.7688 14.6976ZM6.90676 11.1552C4.55912 11.1552 2.65644 9.25613 2.65644 6.90558C2.65644 4.55834 4.5558 2.65599 6.90676 2.65599C9.25439 2.65599 11.1571 4.55502 11.1571 6.90558C11.1571 9.25281 9.25771 11.1552 6.90676 11.1552Z"
-                                fill="white" />
-                        </svg>
-                    </div>
-                </form>
-                <div class="filter-bar">
-                    <h3 class="filter-bar-title">Filters</h3>
-                    <div class="filter">
-                        <i class="fa-solid fa-money-bill-wave fa-xl" style="color: #0065FC;"></i>
-                        <p class="filter-paragraph">Budget</p>
-                    </div>
-                    <div class="filter">
-                        <i class="fa-solid fa-person fa-xl" style="color: #0065FC;"></i>
-                        <p class="filter-paragraph">Family-friendly</p>
-                    </div>
-                    <div class="filter">
-                        <i class="fa-solid fa-heart fa-xl" style="color: #0065FC;"></i>
-                        <p class="filter-paragraph">Romantic</p>
-                    </div>
-                    <div class="filter">
-                        <i class="fa-solid fa-fire fa-xl" style="color: #0065FC;"></i>
-                        <p class="filter-paragraph">Our top picks</p>
-                    </div>
-                </div>
-                <div class="info-bar">
-                    <div class="info-bar-icon">
-                        <i class="fa-solid fa-info fa-xs"></i>
-                    </div>
-                    <p>There are over 500 accomodation options in this city</p>
-                </div>
-            </section>
-            <!-- Clickable cards sections -->
-            <div class="accommodation-and-popular">
-                <section id="accommodation-id" class="accommodation">
-                    <div class="accommodation-title">
-                        <h2 class="section-title">Paris accommodation</h2>
-                    </div>
-                    <div class="accommodation-cards">
-                        <a class="card" href="#">
-                            <article>
-                                <img src="./images/accommodation/fred-kleber.jpg" alt="Image of hotel room showing bed">
-                                <div class="card-content">
-                                    <div class="card-text">
-                                        <h3 class="card-title">Hôtel du Palais</h3>
-                                        <p class="card-subtitle">From <span class="euro">€</span>52 per night</p>
-                                    </div>
-                                    <div class="card-rating">
-                                        <i class="fa-solid fa-star fa-xs" style="color: #0065FC;"></i>
-                                        <i class="fa-solid fa-star fa-xs" style="color: #0065FC;"></i>
-                                        <i class="fa-solid fa-star fa-xs" style="color: #0065FC;"></i>
-                                        <i class="fa-solid fa-star fa-xs" style="color: #0065FC;"></i>
-                                        <i class="fa-solid fa-star fa-xs" style="color: #F2F2F2;"></i>
-                                        <span class="sr-only">Rated 4 out of 5</span>
-                                    </div>
-                                </div>
-                            </article>
-                        </a>
-                        <a class="card" href="#">
-                            <article>
-                                <img src="./images/accommodation/febrian-zakaria.jpg"
-                                    alt="Image of hotel room showing bed">
-                                <div class="card-content">
-                                    <div class="card-text">
-                                        <h3 class="card-title">Hôtel Chez Amina</h3>
-                                        <p class="card-subtitle">From <span class="euro">€</span>96 per night</p>
-                                    </div>
-                                    <div class="card-rating">
-                                        <i class="fa-solid fa-star fa-xs" style="color: #0065FC;"></i>
-                                        <i class="fa-solid fa-star fa-xs" style="color: #0065FC;"></i>
-                                        <i class="fa-solid fa-star fa-xs" style="color: #0065FC;"></i>
-                                        <i class="fa-solid fa-star fa-xs" style="color: #0065FC;"></i>
-                                        <i class="fa-solid fa-star fa-xs" style="color: #F2F2F2;"></i>
-                                        <span class="sr-only">Rated 4 out of 5</span>
-                                    </div>
-                                </div>
-                            </article>
-                        </a>
-                        <a class="card" href="#">
-                            <article>
-                                <img src="./images/accommodation/reisetopia.jpg" alt="Image of hotel room showing bed">
-                                <div class="card-content">
-                                    <div class="card-text">
-                                        <h3 class="card-title">Hôtel Le Moulin</h3>
-                                        <p class="card-subtitle">From <span class="euro">€</span>76 per night</p>
-                                    </div>
-                                    <div class="card-rating">
-                                        <i class="fa-solid fa-star fa-xs" style="color: #0065FC;"></i>
-                                        <i class="fa-solid fa-star fa-xs" style="color: #0065FC;"></i>
-                                        <i class="fa-solid fa-star fa-xs" style="color: #0065FC;"></i>
-                                        <i class="fa-solid fa-star fa-xs" style="color: #0065FC;"></i>
-                                        <i class="fa-solid fa-star fa-xs" style="color: #F2F2F2;"></i>
-                                        <span class="sr-only">Rated 4 out of 5</span>
-                                    </div>
-                                </div>
-                            </article>
-                        </a>
-                    </div>
-                    <div class="accommodation-cards">
-                        <a class="card" href="#">
-                            <article>
-                                <img src="./images/accommodation/annie-spratt.jpg"
-                                    alt="Image of hotel room showing bed">
-                                <div class="card-content">
-                                    <div class="card-text">
-                                        <h3 class="card-title">Hôtel de la Rivière</h3>
-                                        <p class="card-subtitle">From <span class="euro">€</span>46 per night</p>
-                                    </div>
-                                    <div class="card-rating">
-                                        <i class="fa-solid fa-star fa-xs" style="color: #0065FC;"></i>
-                                        <i class="fa-solid fa-star fa-xs" style="color: #0065FC;"></i>
-                                        <i class="fa-solid fa-star fa-xs" style="color: #0065FC;"></i>
-                                        <i class="fa-solid fa-star fa-xs" style="color: #0065FC;"></i>
-                                        <i class="fa-solid fa-star fa-xs" style="color: #F2F2F2;"></i>
-                                        <span class="sr-only">Rated 4 out of 5</span>
-                                    </div>
-                                </div>
-                            </article>
-                        </a>
-                        <a class="card" href="#">
-                            <article>
-                                <img src="./images/accommodation/marcus-loke.jpg" alt="Image of hotel room showing bed">
-                                <div class="card-content">
-                                    <div class="card-text">
-                                        <h3 class="card-title">Auberge de Montmartre</h3>
-                                        <p class="card-subtitle">From <span class="euro">€</span>25 per night</p>
-                                    </div>
-                                    <div class="card-rating">
-                                        <i class="fa-solid fa-star fa-xs" style="color: #0065FC;"></i>
-                                        <i class="fa-solid fa-star fa-xs" style="color: #0065FC;"></i>
-                                        <i class="fa-solid fa-star fa-xs" style="color: #0065FC;"></i>
-                                        <i class="fa-solid fa-star fa-xs" style="color: #0065FC;"></i>
-                                        <i class="fa-solid fa-star fa-xs" style="color: #F2F2F2;"></i>
-                                        <span class="sr-only">Rated 4 out of 5</span>
-                                    </div>
-                                </div>
-                            </article>
-                        </a>
-                        <a class="card" href="#">
-                            <article>
-                                <img src="./images/accommodation/nicate-lee.jpg" alt="Image of hotel room showing bed">
-                                <div class="card-content">
-                                    <div class="card-text">
-                                        <h3 class="card-title">Auberge La Villette</h3>
-                                        <p class="card-subtitle">From <span class="euro">€</span>23 per night</p>
-                                    </div>
-                                    <div class="card-rating">
-                                        <i class="fa-solid fa-star fa-xs" style="color: #0065FC;"></i>
-                                        <i class="fa-solid fa-star fa-xs" style="color: #0065FC;"></i>
-                                        <i class="fa-solid fa-star fa-xs" style="color: #0065FC;"></i>
-                                        <i class="fa-solid fa-star fa-xs" style="color: #0065FC;"></i>
-                                        <i class="fa-solid fa-star fa-xs" style="color: #F2F2F2;"></i>
-                                        <span class="sr-only">Rated 4 out of 5</span>
-                                    </div>
-                                </div>
-                            </article>
-                        </a>
-                    </div>
-                    <h3 class="show-more">Show more</h3>
-                </section>
-                <section class="popular">
-                    <div class="popular-title">
-                        <h2 class="section-title">Most popular</h2>
-                        <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
-                    </div>
-                    <div class="popular-cards">
-                        <article class="card">
-                            <img src="./images/accommodation/emile-guillemot.jpg" alt="Image of hotel room showing bed">
-                            <div class="card-content">
-                                <div class="card-txt">
-                                    <h3 class="card-title">Hôtel Le soleil du matin</h3>
-                                    <p class="card-subtitle">From <span class="euro">€</span>128 per night</p>
-                                </div>
-                                <div class="card-rating">
-                                    <i class="fa-solid fa-star fa-xs" style="color: #0065FC;"></i>
-                                    <i class="fa-solid fa-star fa-xs" style="color: #0065FC;"></i>
-                                    <i class="fa-solid fa-star fa-xs" style="color: #0065FC;"></i>
-                                    <i class="fa-solid fa-star fa-xs" style="color: #0065FC;"></i>
-                                    <i class="fa-solid fa-star fa-xs" style="color: #F2F2F2;"></i>
-                                    <span class="sr-only">Rated 4 out of 5</span>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="card">
-                            <img src="./images/accommodation/aw-creative.jpg" alt="Image of hotel room showing bed">
-                            <div class="card-content">
-                                <div class="card-txt">
-                                    <h3 class="card-title">Chambres d’hôtes Au cœur de l’eau</h3>
-                                    <p class="card-subtitle">From <span class="euro">€</span>71 per night</p>
-                                </div>
-                                <div class="card-rating">
-                                    <i class="fa-solid fa-star fa-xs" style="color: #0065FC;"></i>
-                                    <i class="fa-solid fa-star fa-xs" style="color: #0065FC;"></i>
-                                    <i class="fa-solid fa-star fa-xs" style="color: #0065FC;"></i>
-                                    <i class="fa-solid fa-star fa-xs" style="color: #0065FC;"></i>
-                                    <i class="fa-solid fa-star fa-xs" style="color: #F2F2F2;"></i>
-                                    <span class="sr-only">Rated 4 out of 5</span>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="card">
-                            <img src="./images/accommodation/febrian-zakaria2.jpg"
-                                alt="Image of hotel room showing bed">
-                            <div class="card-content">
-                                <div class="card-txt">
-                                    <h3 class="card-title">Hôtel Bleu et Blanc</h3>
-                                    <p class="card-subtitle">From <span class="euro">€</span>68 per night</p>
-                                </div>
-                                <div class="card-rating">
-                                    <i class="fa-solid fa-star fa-xs" style="color: #0065FC;"></i>
-                                    <i class="fa-solid fa-star fa-xs" style="color: #0065FC;"></i>
-                                    <i class="fa-solid fa-star fa-xs" style="color: #0065FC;"></i>
-                                    <i class="fa-solid fa-star fa-xs" style="color: #0065FC;"></i>
-                                    <i class="fa-solid fa-star fa-xs" style="color: #F2F2F2;"></i>
-                                    <span class="sr-only">Rated 4 out of 5</span>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                </section>
-            </div>
-            <!-- Things to do section -->
-            <section id="things-to-do-id" class="things-to-do-in-Paris">
-                <h2 class="things-to-do-title">Things to do in Paris</h2>
-                <div class="things-to-do-cards-section">
-                    <a href="#">
-                        <figure class="things-to-do-figure">
-                            <img src="images/095c4206ffe6dd4a043c821967184a9a.jpeg" alt="Picture with Eiffel Tower">
-                            <figcaption>The Eiffel Tower</figcaption>
-                        </figure>
-                    </a>
-                    <a href="#">
-                        <figure class="things-to-do-figure">
-                            <img src="images/paris-4546007_1280.jpg" alt="Picture with Montmartre">
-                            <figcaption>Montmartre</figcaption>
-                        </figure>
-                    </a>
-                    <a href="#">
-                        <figure class="things-to-do-figure">
-                            <img src="images\1a5eaf1c2f487b744319e88b22eb6c94 (1).jpeg"
-                                alt="Picture with The Louvre">
-                            <figcaption>The Louvre</figcaption>
-                        </figure>
-                    </a>
-                    <a href="#">
-                        <figure class="things-to-do-figure">
-                            <img src="images\246c66c68fd90c9a76f74d19c4ca74cf.jpeg" alt="Picture with Notre-Dame de Paris">
-                            <figcaption>Notre-Dame de Paris</figcaption>
-                        </figure>
-                    </a>
-                </div>
-            </section>
-        </main>
-        <footer>
-            <div class="footer-section">
-                <section class="footer-section-group">
-                    <h3 class="footer-section-group-title">About</h3>
-                    <a href="#">How it works</a>
-                    <a href="#">Terms and conditions</a>
-                    <a href="#">Data and privacy</a>
-                </section>
-                <section class="footer-section-group">
-                    <h3 class="footer-section-group-title">Our accommodation</h3>
-                    <a href="#">Our quality promise</a>
-                    <a href="#">Add your hotel</a>
-                </section>
-                <section class="footer-section-group">
-                    <h3 class="footer-section-group-title">Support</h3>
-                    <a href="#">Help center</a>
-                    <a href="#">Contact us</a>
-                </section>
-            </div>
-        </footer>
-    </div>
+	<div class="main-container">
+		<header>
+			<div class="logo">
+				<img src="./images/logo/Booki.png" class="Booki" alt="Booki Logo">
+			</div>
+			<nav class="navigation">
+				<div class="nav-buttons">
+					<a href="#accommodation-id" class="navigation-btn">
+						<div class="blue-bar"></div>
+						<div class="bg-bar"></div>
+						<p class="nav-btn-text">Accomodation</p>
+					</a>
+					<a href="#things-to-do-id" class="navigation-btn">
+						<div class="blue-bar"></div>
+						<div class="bg-bar"></div>
+						<p class="nav-btn-text">Things to do</p>
+					</a>
+				</div>
+			</nav>
+		</header>
+		<main>
+			<!-- Search and filters section -->
+			<section class="info-group-section">
+				<div class="find-accomodation-headline">
+					<h1 class="headline-title">Find accomodation for your dream holiday</h1>
+					<p class="headline-subtitle">In the heart of the city or surrounded by nature</p>
+				</div>
+				<form class="search-bar-mobile">
+					<svg class="search-bar-location-icon" xmlns="http://www.w3.org/2000/svg" width="52" height="51"
+						viewBox="0 0 52 51" fill="none">
+						<path d="M51.5 1V0.5H51H16C7.43959 0.5 0.5 7.43959 0.5 16V35C0.5 43.5604 7.43959 50.5 16 50.5H51H51.5V50V1Z"
+							fill="#F2F2F2" stroke="#F2F2F2" />
+						<path
+							d="M25.1359 33.5955C23.2328 31.3326 19 25.8481 19 22.7675C19 19.0299 22.134 16 26 16C29.8646 16 33 19.0299 33 22.7675C33 25.8481 28.7344 31.3326 26.8641 33.5955C26.4156 34.1348 25.5844 34.1348 25.1359 33.5955ZM26 25.0234C27.287 25.0234 28.3333 24.0117 28.3333 22.7675C28.3333 21.5233 27.287 20.5117 26 20.5117C24.713 20.5117 23.6667 21.5233 23.6667 22.7675C23.6667 24.0117 24.713 25.0234 26 25.0234Z"
+							fill="black" />
+					</svg>
+					<input class="search-bar-input" type="text" value="Paris, France">
+					<div class="search-magnyfying-glass">
+						<svg class="search-bar-svg" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"
+							fill="none">
+							<path
+								d="M16.7688 14.6976L13.4582 11.3876C13.3088 11.2382 13.1062 11.1552 12.8937 11.1552H12.3525C13.2689 9.9832 13.8135 8.50913 13.8135 6.90558C13.8135 3.09091 10.7221 0 6.90676 0C3.09144 0 0 3.09091 0 6.90558C0 10.7202 3.09144 13.8112 6.90676 13.8112C8.51058 13.8112 9.98491 13.2667 11.1571 12.3504V12.8915C11.1571 13.104 11.2401 13.3065 11.3895 13.4559L14.7001 16.7659C15.0122 17.078 15.517 17.078 15.8258 16.7659L16.7655 15.8264C17.0776 15.5143 17.0776 15.0097 16.7688 14.6976ZM6.90676 11.1552C4.55912 11.1552 2.65644 9.25613 2.65644 6.90558C2.65644 4.55834 4.5558 2.65599 6.90676 2.65599C9.25439 2.65599 11.1571 4.55502 11.1571 6.90558C11.1571 9.25281 9.25771 11.1552 6.90676 11.1552Z"
+								fill="white" />
+						</svg>
+					</div>
+				</form>
+				<div class="filter-bar">
+					<h3 class="filter-bar-title">Filters</h3>
+					<div class="filter">
+						<i class="fa-solid fa-money-bill-wave fa-xl" style="color: #0065FC;"></i>
+						<p class="filter-paragraph">Budget</p>
+					</div>
+					<div class="filter">
+						<i class="fa-solid fa-person fa-xl" style="color: #0065FC;"></i>
+						<p class="filter-paragraph">Family-friendly</p>
+					</div>
+					<div class="filter">
+						<i class="fa-solid fa-heart fa-xl" style="color: #0065FC;"></i>
+						<p class="filter-paragraph">Romantic</p>
+					</div>
+					<div class="filter">
+						<i class="fa-solid fa-fire fa-xl" style="color: #0065FC;"></i>
+						<p class="filter-paragraph">Our top picks</p>
+					</div>
+				</div>
+				<div class="info-bar">
+					<div class="info-bar-icon">
+						<i class="fa-solid fa-info fa-xs"></i>
+					</div>
+					<p>There are over 500 accomodation options in this city</p>
+				</div>
+			</section>
+			<!-- Clickable cards sections -->
+			<div class="accommodation-and-popular">
+				<section id="accommodation-id" class="accommodation">
+					<div class="accommodation-title">
+						<h2 class="section-title">Paris accommodation</h2>
+					</div>
+					<div class="accommodation-cards">
+						<a class="card" href="#">
+							<article>
+								<img src="./images/accommodation/fred-kleber.jpg" alt="Image of hotel room showing bed">
+								<div class="card-content">
+									<div class="card-text">
+										<h3 class="card-title">Hôtel du Palais</h3>
+										<p class="card-subtitle">From <span class="euro">€</span>52 per night</p>
+									</div>
+									<div class="card-rating">
+										<i class="fa-solid fa-star fa-xs" style="color: #0065FC;"></i>
+										<i class="fa-solid fa-star fa-xs" style="color: #0065FC;"></i>
+										<i class="fa-solid fa-star fa-xs" style="color: #0065FC;"></i>
+										<i class="fa-solid fa-star fa-xs" style="color: #0065FC;"></i>
+										<i class="fa-solid fa-star fa-xs" style="color: #F2F2F2;"></i>
+										<span class="sr-only">Rated 4 out of 5</span>
+									</div>
+								</div>
+							</article>
+						</a>
+						<a class="card" href="#">
+							<article>
+								<img src="./images/accommodation/febrian-zakaria.jpg" alt="Image of hotel room showing bed">
+								<div class="card-content">
+									<div class="card-text">
+										<h3 class="card-title">Hôtel Chez Amina</h3>
+										<p class="card-subtitle">From <span class="euro">€</span>96 per night</p>
+									</div>
+									<div class="card-rating">
+										<i class="fa-solid fa-star fa-xs" style="color: #0065FC;"></i>
+										<i class="fa-solid fa-star fa-xs" style="color: #0065FC;"></i>
+										<i class="fa-solid fa-star fa-xs" style="color: #0065FC;"></i>
+										<i class="fa-solid fa-star fa-xs" style="color: #0065FC;"></i>
+										<i class="fa-solid fa-star fa-xs" style="color: #F2F2F2;"></i>
+										<span class="sr-only">Rated 4 out of 5</span>
+									</div>
+								</div>
+							</article>
+						</a>
+						<a class="card" href="#">
+							<article>
+								<img src="./images/accommodation/reisetopia.jpg" alt="Image of hotel room showing bed">
+								<div class="card-content">
+									<div class="card-text">
+										<h3 class="card-title">Hôtel Le Moulin</h3>
+										<p class="card-subtitle">From <span class="euro">€</span>76 per night</p>
+									</div>
+									<div class="card-rating">
+										<i class="fa-solid fa-star fa-xs" style="color: #0065FC;"></i>
+										<i class="fa-solid fa-star fa-xs" style="color: #0065FC;"></i>
+										<i class="fa-solid fa-star fa-xs" style="color: #0065FC;"></i>
+										<i class="fa-solid fa-star fa-xs" style="color: #0065FC;"></i>
+										<i class="fa-solid fa-star fa-xs" style="color: #F2F2F2;"></i>
+										<span class="sr-only">Rated 4 out of 5</span>
+									</div>
+								</div>
+							</article>
+						</a>
+					</div>
+					<div class="accommodation-cards">
+						<a class="card" href="#">
+							<article>
+								<img src="./images/accommodation/annie-spratt.jpg" alt="Image of hotel room showing bed">
+								<div class="card-content">
+									<div class="card-text">
+										<h3 class="card-title">Hôtel de la Rivière</h3>
+										<p class="card-subtitle">From <span class="euro">€</span>46 per night</p>
+									</div>
+									<div class="card-rating">
+										<i class="fa-solid fa-star fa-xs" style="color: #0065FC;"></i>
+										<i class="fa-solid fa-star fa-xs" style="color: #0065FC;"></i>
+										<i class="fa-solid fa-star fa-xs" style="color: #0065FC;"></i>
+										<i class="fa-solid fa-star fa-xs" style="color: #0065FC;"></i>
+										<i class="fa-solid fa-star fa-xs" style="color: #F2F2F2;"></i>
+										<span class="sr-only">Rated 4 out of 5</span>
+									</div>
+								</div>
+							</article>
+						</a>
+						<a class="card" href="#">
+							<article>
+								<img src="./images/accommodation/marcus-loke.jpg" alt="Image of hotel room showing bed">
+								<div class="card-content">
+									<div class="card-text">
+										<h3 class="card-title">Auberge de Montmartre</h3>
+										<p class="card-subtitle">From <span class="euro">€</span>25 per night</p>
+									</div>
+									<div class="card-rating">
+										<i class="fa-solid fa-star fa-xs" style="color: #0065FC;"></i>
+										<i class="fa-solid fa-star fa-xs" style="color: #0065FC;"></i>
+										<i class="fa-solid fa-star fa-xs" style="color: #0065FC;"></i>
+										<i class="fa-solid fa-star fa-xs" style="color: #0065FC;"></i>
+										<i class="fa-solid fa-star fa-xs" style="color: #F2F2F2;"></i>
+										<span class="sr-only">Rated 4 out of 5</span>
+									</div>
+								</div>
+							</article>
+						</a>
+						<a class="card" href="#">
+							<article>
+								<img src="./images/accommodation/nicate-lee.jpg" alt="Image of hotel room showing bed">
+								<div class="card-content">
+									<div class="card-text">
+										<h3 class="card-title">Auberge La Villette</h3>
+										<p class="card-subtitle">From <span class="euro">€</span>23 per night</p>
+									</div>
+									<div class="card-rating">
+										<i class="fa-solid fa-star fa-xs" style="color: #0065FC;"></i>
+										<i class="fa-solid fa-star fa-xs" style="color: #0065FC;"></i>
+										<i class="fa-solid fa-star fa-xs" style="color: #0065FC;"></i>
+										<i class="fa-solid fa-star fa-xs" style="color: #0065FC;"></i>
+										<i class="fa-solid fa-star fa-xs" style="color: #F2F2F2;"></i>
+										<span class="sr-only">Rated 4 out of 5</span>
+									</div>
+								</div>
+							</article>
+						</a>
+					</div>
+					<h3 class="show-more">Show more</h3>
+				</section>
+				<section class="popular">
+					<div class="popular-title">
+						<h2 class="section-title">Most popular</h2>
+						<i class="fa-solid fa-chart-line" aria-hidden="true"></i>
+					</div>
+					<div class="popular-cards">
+						<article class="card">
+							<img src="./images/accommodation/emile-guillemot.jpg" alt="Image of hotel room showing bed">
+							<div class="card-content">
+								<div class="card-txt">
+									<h3 class="card-title">Hôtel Le soleil du matin</h3>
+									<p class="card-subtitle">From <span class="euro">€</span>128 per night</p>
+								</div>
+								<div class="card-rating">
+									<i class="fa-solid fa-star fa-xs" style="color: #0065FC;"></i>
+									<i class="fa-solid fa-star fa-xs" style="color: #0065FC;"></i>
+									<i class="fa-solid fa-star fa-xs" style="color: #0065FC;"></i>
+									<i class="fa-solid fa-star fa-xs" style="color: #0065FC;"></i>
+									<i class="fa-solid fa-star fa-xs" style="color: #F2F2F2;"></i>
+									<span class="sr-only">Rated 4 out of 5</span>
+								</div>
+							</div>
+						</article>
+						<article class="card">
+							<img src="./images/accommodation/aw-creative.jpg" alt="Image of hotel room showing bed">
+							<div class="card-content">
+								<div class="card-txt">
+									<h3 class="card-title">Chambres d’hôtes Au cœur de l’eau</h3>
+									<p class="card-subtitle">From <span class="euro">€</span>71 per night</p>
+								</div>
+								<div class="card-rating">
+									<i class="fa-solid fa-star fa-xs" style="color: #0065FC;"></i>
+									<i class="fa-solid fa-star fa-xs" style="color: #0065FC;"></i>
+									<i class="fa-solid fa-star fa-xs" style="color: #0065FC;"></i>
+									<i class="fa-solid fa-star fa-xs" style="color: #0065FC;"></i>
+									<i class="fa-solid fa-star fa-xs" style="color: #F2F2F2;"></i>
+									<span class="sr-only">Rated 4 out of 5</span>
+								</div>
+							</div>
+						</article>
+						<article class="card">
+							<img src="./images/accommodation/febrian-zakaria2.jpg" alt="Image of hotel room showing bed">
+							<div class="card-content">
+								<div class="card-txt">
+									<h3 class="card-title">Hôtel Bleu et Blanc</h3>
+									<p class="card-subtitle">From <span class="euro">€</span>68 per night</p>
+								</div>
+								<div class="card-rating">
+									<i class="fa-solid fa-star fa-xs" style="color: #0065FC;"></i>
+									<i class="fa-solid fa-star fa-xs" style="color: #0065FC;"></i>
+									<i class="fa-solid fa-star fa-xs" style="color: #0065FC;"></i>
+									<i class="fa-solid fa-star fa-xs" style="color: #0065FC;"></i>
+									<i class="fa-solid fa-star fa-xs" style="color: #F2F2F2;"></i>
+									<span class="sr-only">Rated 4 out of 5</span>
+								</div>
+							</div>
+						</article>
+					</div>
+				</section>
+			</div>
+			<!-- Things to do section -->
+			<section id="things-to-do-id" class="things-to-do-in-Paris">
+				<h2 class="things-to-do-title">Things to do in Paris</h2>
+				<div class="things-to-do-cards-section">
+					<a href="#">
+						<figure class="things-to-do-figure">
+							<img src="images/095c4206ffe6dd4a043c821967184a9a.jpeg" alt="Picture with Eiffel Tower">
+							<figcaption>The Eiffel Tower</figcaption>
+						</figure>
+					</a>
+					<a href="#">
+						<figure class="things-to-do-figure">
+							<img src="images/paris-4546007_1280.jpg" alt="Picture with Montmartre">
+							<figcaption>Montmartre</figcaption>
+						</figure>
+					</a>
+					<a href="#">
+						<figure class="things-to-do-figure">
+							<img src="images\1a5eaf1c2f487b744319e88b22eb6c94 (1).jpeg" alt="Picture with The Louvre">
+							<figcaption>The Louvre</figcaption>
+						</figure>
+					</a>
+					<a href="#">
+						<figure class="things-to-do-figure">
+							<img src="images\246c66c68fd90c9a76f74d19c4ca74cf.jpeg" alt="Picture with Notre-Dame de Paris">
+							<figcaption>Notre-Dame de Paris</figcaption>
+						</figure>
+					</a>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<div class="footer-section">
+				<section class="footer-section-group">
+					<h3 class="footer-section-group-title">About</h3>
+					<a href="#">How it works</a>
+					<a href="#">Terms and conditions</a>
+					<a href="#">Data and privacy</a>
+				</section>
+				<section class="footer-section-group">
+					<h3 class="footer-section-group-title">Our accommodation</h3>
+					<a href="#">Our quality promise</a>
+					<a href="#">Add your hotel</a>
+				</section>
+				<section class="footer-section-group">
+					<h3 class="footer-section-group-title">Support</h3>
+					<a href="#">Help center</a>
+					<a href="#">Contact us</a>
+				</section>
+			</div>
+		</footer>
+	</div>
 </body>
 
 </html>
